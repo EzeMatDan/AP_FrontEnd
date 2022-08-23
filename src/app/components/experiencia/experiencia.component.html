@@ -1,0 +1,25 @@
+<div class="row">
+  <h1 class="card bg-secondary bg-gradient text-white" style="border-radius: 1rem">Experiencia Laboral</h1>
+
+
+<div class="col-lg-11">
+  <table class="table">
+    <tbody>
+      <tr *ngFor="let Experiencia of expe">
+        <td><h3 class="neon" ><img class="icono-exp" src="../../../assets/images/componente exp.png" alt="">{{Experiencia.nombreE}}</h3></td>
+        <td class="desc">{{Experiencia.descripcionE}}</td>
+        <td *ngIf="isLogged"><button class="btn btn-light" routerLink="/editexp/{{Experiencia.id}}"><img src="../../../assets/images/pen-fill.svg" alt=""></button></td>
+        <td *ngIf="isLogged"><button class="btn btn-danger" (click)="delete(Experiencia.id)"><img src="../../../assets/images/trash3.svg" alt=""></button></td>
+      </tr>
+    </tbody>
+  </table> 
+</div>
+
+<div class="col-lg-2">
+  <button type="button" class="btn btn-dark" routerLink="/nuevaexp" *ngIf="isLogged">
+    Nueva experiencia
+  </button>
+</div>
+
+
+</div>

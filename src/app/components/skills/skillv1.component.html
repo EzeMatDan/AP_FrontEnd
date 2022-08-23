@@ -1,0 +1,43 @@
+<div class="row">
+    <h1 class="card bg-secondary bg-gradient text-white" style="border-radius: 1rem">Skills Adicionales</h1>
+
+    
+      <div class="flex-container">
+        <div class="col-sm-4 col-md-4 col-lg-4" *ngFor="let Skillv1 of skillv1">
+          <div><circle-progress
+            [backgroundColor]="'#ffffff'"
+            [titleFontSize]="'1.5em'"
+            [showSubtitle]="false"
+            [title]="Skillv1.title"
+            [showUnits]="false"
+            [imageHeight]="150"
+            [imageWidth]="150"
+            [percent]="Skillv1.porcentaje"
+            [startFromZero]="false"
+            [showSubtitle]="false"
+            [radius]="100"
+            [lazy]="false"
+            [outerStrokeWidth]="16"
+            [innerStrokeWidth]="8"
+            [innerStrokeColor]="'#9dceff'"
+            [animation]="true"
+            [animationDuration]="1000"
+            [outerStrokeColor]="'#0080c0'"
+          ></circle-progress>
+         <button *ngIf="isLogged" class="btn btn-light" routerLink="/editskillv1/{{Skillv1.id}}"><img src="../../../assets/images/pen-fill.svg" alt=""> </button>
+          <button *ngIf="isLogged" class="btn btn-danger" (click)="delete(Skillv1.id)"><img src="../../../assets/images/trash3.svg" alt=""></button>
+        </div>
+      </div>
+    </div>
+
+  
+    <div class="col-lg-2">
+      <button type="button" class="btn btn-dark" routerLink="/newcircle" *ngIf="isLogged" >
+        Agregar Skill
+      </button>
+    </div>
+
+  </div>
+
+
+

@@ -1,0 +1,21 @@
+<div class="row">
+    <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+        <img src="../../../assets/images/fotoportada.png" id="fotoportada" class="img-fluid" alt="Fotoportada">
+    </div>
+    <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+        <p id="nombre">{{persona.nombre}} {{persona.apellido}}</p>
+            
+        <p>{{persona.titulo}}</p>
+    </div>
+        <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+            <span *ngFor="let acerca of acerca">
+            <h1 class="card bg-secondary bg-gradient text-white" style="border-radius: 1rem">{{acerca.nombreA}}</h1>
+            <p class="recuadro">{{acerca.descripcionA}} <br> 
+                <button *ngIf="isLogged" class="btn btn-light" routerLink="/editacerca/{{acerca.id}}"><img src="../../../assets/images/pen-fill.svg" alt="" ></button></p>
+            </span>
+        </div>
+</div>
+
+
+
+

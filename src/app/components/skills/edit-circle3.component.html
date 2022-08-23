@@ -1,0 +1,22 @@
+<section class="vh-100 gradient-custom">
+    <div class="container card bg-dark text-white" style="border-radius: 1rem" *ngIf="circleprogress">
+      <div class="row">
+        <div>
+          <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+            <div class="form-group">
+              <label for="porcentaje3">Editar porcentaje</label>
+              <input
+                type="text"
+                class="form-control"
+                id="porcentaje3"
+                name="porcentaje3"
+                [(ngModel)]="circleprogress.porcentaje3"
+                required
+              />
+            </div>
+            <button class="btn btn-secondary">Actualizar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    </section>

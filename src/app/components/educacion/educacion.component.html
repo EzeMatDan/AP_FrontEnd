@@ -1,0 +1,29 @@
+<div class="row">
+    <h1 class="card bg-secondary bg-gradient text-white" style="border-radius: 1rem">Educación        </h1>
+
+   
+  <div class="col-lg-11">
+    <table class="table">
+      <tbody>
+        <tr *ngFor="let Educacion of educacion">
+          <td><h3 class="neon"><img class="icono-edu" src="../../../assets/images/component estudio.png" alt="">{{Educacion.nombreE}}</h3></td>
+          <td class="desc">{{Educacion.descripcionE}}</td>
+          <td *ngIf="isLogged"><button class="btn btn-light" routerLink="/editedu/{{Educacion.id}}"><img src="../../../assets/images/pen-fill.svg" alt=""> </button></td>
+          <td *ngIf="isLogged"><button class="btn btn-danger" (click)="delete(Educacion.id)"><img src="../../../assets/images/trash3.svg" alt=""></button></td>
+        </tr>
+      </tbody>
+    </table> 
+
+
+
+  </div>
+
+
+  <div class="col-lg-2">
+    <button type="button" class="btn btn-dark" routerLink="/nuevaedu" *ngIf="isLogged" >
+      Agregar Educación
+    </button>
+  </div>
+    
+  
+  </div>

@@ -1,0 +1,22 @@
+.row{
+    background: rgb(12, 51, 103);
+}
+
+.modal-body{
+    margin:0;
+    padding:0;
+}
+
+.img-styles{
+    max-width: 1.9em;
+    padding: 5px;
+}
+
+footer{
+    color: rgb(124, 177, 221);
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    box-shadow: 2px -2px 5px black;
+}

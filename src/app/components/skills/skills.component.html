@@ -1,0 +1,189 @@
+<div class="row">
+  <h1 class="card bg-secondary bg-gradient text-white" style="border-radius: 1rem">Hard & Soft Skills</h1>
+
+      <div class="flex-container">
+        <table class="col-sm-4 col-md-4 col-lg-4">
+          <tbody>
+            <tr *ngFor="let circleprogress of circleprogress">
+              <td class="col-sm-4 col-md-4 col-lg-4">
+                <circle-progress
+                  [backgroundColor]="'#ffffff'"
+                  [titleFontSize]="'1.5em'"
+                  [showSubtitle]="false"
+                  [imageSrc]="'../../../assets/images/diseño.png'"
+                  [showImage]="true"
+                  [imageHeight]="150"
+                  [imageWidth]="150"
+                  [percent]="circleprogress.porcentaje"
+                  [startFromZero]="false"
+                  [showSubtitle]="false"
+                  [radius]="100"
+                  [lazy]="false"
+                  [outerStrokeWidth]="16"
+                  [innerStrokeWidth]="8"
+                  [innerStrokeColor]="'#9dceff'"
+                  [animation]="true"
+                  [animationDuration]="1000"
+                  [outerStrokeColor]="'#0080c0'"
+                ></circle-progress>
+                <button *ngIf="isLogged" class="btn btn-light" routerLink="/editcircle/{{circleprogress.id}}"><img src="../../../assets/images/pen-fill.svg" alt="">Porcentaje</button>
+              </td>
+            </tr>
+          </tbody>
+        </table> 
+
+        <table class="col-sm-4 col-md-4 col-lg-4">
+          <tbody>
+            <tr *ngFor="let circleprogress of circleprogress">
+              <td>
+                <circle-progress
+                  [backgroundColor]="'#ffffff'"
+                  [titleFontSize]="'1.5em'"
+                  [showSubtitle]="false"
+                  [imageSrc]="'../../../assets/images/skill angular.png'"
+                  [showImage]="true"
+                  [imageHeight]="150"
+                  [imageWidth]="150"
+                  [percent]="circleprogress.porcentaje1"
+                  [startFromZero]="false"
+                  [showSubtitle]="false"
+                  [radius]="100"
+                  [lazy]="false"
+                  [outerStrokeWidth]="16"
+                  [innerStrokeWidth]="8"
+                  [innerStrokeColor]="'#9dceff'"
+                  [animation]="true"
+                  [animationDuration]="1000"
+                  [outerStrokeColor]="'#0080c0'"
+                ></circle-progress>
+                <button *ngIf="isLogged" class="btn btn-light" routerLink="/editcircle1/{{circleprogress.id}}"><img src="../../../assets/images/pen-fill.svg" alt="">Porcentaje</button>
+              </td>
+            </tr>
+          </tbody>
+        </table> 
+
+        <table class="col-sm-4 col-md-4 col-lg-4">
+          <tbody>
+            <tr *ngFor="let circleprogress of circleprogress">
+              <td>
+                <circle-progress
+                  [backgroundColor]="'#ffffff'"
+                  [titleFontSize]="'1.5em'"
+                  [showSubtitle]="false"
+                  [imageSrc]="'../../../assets/images/excel.png'"
+                  [showImage]="true"
+                  [imageHeight]="150"
+                  [imageWidth]="150"
+                  [percent]="circleprogress.porcentaje2"
+                  [startFromZero]="false"
+                  [showSubtitle]="false"
+                  [radius]="100"
+                  [lazy]="false"
+                  [outerStrokeWidth]="16"
+                  [innerStrokeWidth]="8"
+                  [innerStrokeColor]="'#9dceff'"
+                  [animation]="true"
+                  [animationDuration]="1000"
+                  [outerStrokeColor]="'#0080c0'"
+                ></circle-progress>
+                <button *ngIf="isLogged" class="btn btn-light" routerLink="/editcircle2/{{circleprogress.id}}"><img src="../../../assets/images/pen-fill.svg" alt="">Porcentaje</button>
+              </td>
+            </tr>
+          </tbody>
+        </table> 
+
+
+        <table class="col-sm-4 col-md-4 col-lg-4">
+          <tbody>
+            <tr *ngFor="let circleprogress of circleprogress">
+              <td>
+                <circle-progress
+                  [backgroundColor]="'#ffffff'"
+                  [titleFontSize]="'1.5em'"
+                  [showSubtitle]="false"
+                  [imageSrc]="'../../../assets/images/trabajo equipo01.png'"
+                  [showImage]="true"
+                  [imageHeight]="150"
+                  [imageWidth]="150"
+                  [percent]="circleprogress.porcentaje3"
+                  [startFromZero]="false"
+                  [showSubtitle]="false"
+                  [radius]="100"
+                  [lazy]="false"
+                  [outerStrokeWidth]="16"
+                  [innerStrokeWidth]="8"
+                  [innerStrokeColor]="'#9dceff'"
+                  [animation]="true"
+                  [animationDuration]="1000"
+                  [outerStrokeColor]="'#0080c0'"
+                ></circle-progress>
+                <button *ngIf="isLogged" class="btn btn-light" routerLink="/editcircle3/{{circleprogress.id}}"><img src="../../../assets/images/pen-fill.svg" alt="">Porcentaje</button>
+              </td>
+            </tr>
+          </tbody>
+        </table> 
+        
+        <table class="col-sm-4 col-md-4 col-lg-4">
+          <tbody>
+            <tr *ngFor="let circleprogress of circleprogress">
+              <td>
+                <circle-progress
+                  [backgroundColor]="'#ffffff'"
+                  [titleFontSize]="'1.5em'"
+                  [showSubtitle]="false"
+                  [imageSrc]="'../../../assets/images/reparacion1.png'"
+                  [showImage]="true"
+                  [imageHeight]="150"
+                  [imageWidth]="150"
+                  [percent]="circleprogress.porcentaje4"
+                  [startFromZero]="false"
+                  [showSubtitle]="false"
+                  [radius]="100"
+                  [lazy]="false"
+                  [outerStrokeWidth]="16"
+                  [innerStrokeWidth]="8"
+                  [innerStrokeColor]="'#9dceff'"
+                  [animation]="true"
+                  [animationDuration]="1000"
+                  [outerStrokeColor]="'#0080c0'"
+                ></circle-progress>
+                <button *ngIf="isLogged" class="btn btn-light" routerLink="/editcircle4/{{circleprogress.id}}"><img src="../../../assets/images/pen-fill.svg" alt="">Porcentaje</button>
+              </td>
+            </tr>
+          </tbody>
+        </table> 
+
+        <table class="col-sm-4 col-md-4 col-lg-4">
+          <tbody>
+            <tr *ngFor="let circleprogress of circleprogress">
+              <td>
+                <circle-progress
+                  [backgroundColor]="'#ffffff'"
+                  [titleFontSize]="'1.5em'"
+                  [showSubtitle]="false"
+                  [imageSrc]="'../../../assets/images/presea3.png'"
+                  [showImage]="true"
+                  [imageHeight]="150"
+                  [imageWidth]="150"
+                  [percent]="circleprogress.porcentaje5"
+                  [startFromZero]="false"
+                  [showSubtitle]="false"
+                  [radius]="100"
+                  [lazy]="false"
+                  [outerStrokeWidth]="16"
+                  [innerStrokeWidth]="8"
+                  [innerStrokeColor]="'#9dceff'"
+                  [animation]="true"
+                  [animationDuration]="1000"
+                  [outerStrokeColor]="'#0080c0'"
+                ></circle-progress>
+                <button *ngIf="isLogged" class="btn btn-light" routerLink="/editcircle5/{{circleprogress.id}}"><img src="../../../assets/images/pen-fill.svg" alt="">Porcentaje</button>
+              </td>
+            </tr>
+          </tbody>
+        </table> 
+
+      </div>
+
+    </div>
+

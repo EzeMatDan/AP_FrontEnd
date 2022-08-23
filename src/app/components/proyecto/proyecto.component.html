@@ -1,0 +1,42 @@
+<div class="row">
+    <h1 class="card bg-secondary bg-gradient text-white" style="border-radius: 1rem">Proyecto</h1>
+    <div class="contenedor">
+        <div class="col-sm-12 col-md-7 col-lg-7 texto1">
+            <h2 class="neon">Muebles industriales</h2>
+            <p class="desc">Diseños propios personalizados // <a href="http://www.instagram.com/emd_muebles/" target="_blank"> Instagram emd_muebles</a></p>
+        </div>
+        <div class="col-sm-12 col-md-3 col-lg-3 offset-md-1 offset-lg-1 imagen1">
+            <img src="../../../assets/images/insta1.png" class="img-fluid img-imagen1" alt="">
+        </div>
+    </div>
+</div>
+
+<div class="row">
+  <h1 class="card bg-secondary bg-gradient text-white" style="border-radius: 1rem">Nuevos Proyectos</h1>
+
+ 
+<div class="col-lg-11">
+  <table class="table">
+    <tbody>
+      <tr *ngFor="let Proyecto of proyecto">
+        <td><h3 class="neon"><img class="icono-proy" src="../../../assets/images/componente proyect.png" alt="">{{Proyecto.nombreP}}</h3></td>
+        <td class="desc">{{Proyecto.descripcionP}}</td>
+        <td *ngIf="isLogged"><button class="btn btn-light" routerLink="/editproyecto/{{Proyecto.id}}"><img src="../../../assets/images/pen-fill.svg" alt=""> </button></td>
+        <td *ngIf="isLogged"><button class="btn btn-danger" (click)="delete(Proyecto.id)"><img src="../../../assets/images/trash3.svg" alt=""></button></td>
+      </tr>
+    </tbody>
+  </table> 
+</div>
+
+
+  <div class="col-lg-2">
+    <button type="button" class="btn btn-dark" routerLink="/nuevoproyecto" *ngIf="isLogged" >
+      Agregar Proyectos
+    </button>
+  </div>
+
+
+
+
+
+ 
